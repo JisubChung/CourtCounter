@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private int scoreTeamA = 0;
+    private int scoreTeamB = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,19 +49,47 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
-    public void threePoints(View view) {
+
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+
+    public void threePointsForTeamA(View view) {
         scoreTeamA +=3;
         displayForTeamA(scoreTeamA);
     }
 
-    public void twoPoints(View view) {
+    public void twoPointsForTeamA(View view) {
         scoreTeamA +=2;
         displayForTeamA(scoreTeamA);
     }
 
-    public void onePoints(View view) {
+    public void onePointsForTeamA(View view) {
         scoreTeamA +=1;
         displayForTeamA(scoreTeamA);
     }
 
+    public void threePointsForTeamB(View view) {
+        scoreTeamB +=3;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void twoPointsForTeamB(View view) {
+        scoreTeamB +=2;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void onePointsForTeamB(View view) {
+        scoreTeamB +=1;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void resetAllScores(View view) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
 }

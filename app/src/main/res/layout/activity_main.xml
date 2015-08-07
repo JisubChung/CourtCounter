@@ -39,7 +39,7 @@
                 android:layout_gravity="clip_horizontal"
                 android:layout_marginBottom="4dp"
                 android:layout_marginTop="4dp"
-                android:onClick="threePointsForA"
+                android:onClick="threePointsForTeamA"
                 android:text="+3 points" />
 
             <Button
@@ -50,7 +50,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="4dp"
                 android:layout_marginTop="4dp"
-                android:onClick="twoPointsForA"
+                android:onClick="twoPointsForTeamA"
                 android:text="+2 points" />
 
             <Button
@@ -61,7 +61,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="4dp"
                 android:layout_marginTop="4dp"
-                android:onClick="onePointsForA"
+                android:onClick="onePointsForTeamA"
                 android:text="free throw" />
 
 
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:paddingBottom="4dp"
-                android:text="Team A" />
+                android:text="Team B" />
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -97,7 +97,7 @@
                 android:layout_gravity="clip_horizontal"
                 android:layout_marginBottom="4dp"
                 android:layout_marginTop="4dp"
-                android:onClick="threePointsForA"
+                android:onClick="threePointsForTeamB"
                 android:text="+3 points" />
 
             <Button
@@ -108,7 +108,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="4dp"
                 android:layout_marginTop="4dp"
-                android:onClick="twoPointsForA"
+                android:onClick="twoPointsForTeamB"
                 android:text="+2 points" />
 
             <Button
@@ -119,12 +119,21 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="4dp"
                 android:layout_marginTop="4dp"
-                android:onClick="onePointsForA"
+                android:onClick="onePointsForTeamB"
                 android:text="free throw" />
 
 
         </LinearLayout>
 
+
     </LinearLayout>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="resetAllScores"
+        />
 </RelativeLayout>
