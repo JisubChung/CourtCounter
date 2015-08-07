@@ -4,9 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    private int scoreTeamA = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +48,19 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
+    public void threePoints(View view) {
+        scoreTeamA +=3;
+        displayForTeamA(scoreTeamA);
+    }
+
+    public void twoPoints(View view) {
+        scoreTeamA +=2;
+        displayForTeamA(scoreTeamA);
+    }
+
+    public void onePoints(View view) {
+        scoreTeamA +=1;
+        displayForTeamA(scoreTeamA);
+    }
 
 }
